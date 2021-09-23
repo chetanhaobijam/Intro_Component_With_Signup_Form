@@ -7,4 +7,77 @@
 
 body {
   font: 400 16px "Poppins", sans-serif;
+  background-image: url("../images/bg-intro-mobile.png");
+  background-color: #ff7a7a;
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  margin-top: 5rem;
+}
+header h1 {
+  font-size: 1.8rem;
+  line-height: 1.3em;
+}
+header p {
+  width: 90%;
+  margin: 2rem auto 4rem;
+  font-size: 1.1rem;
+}
+
+.try-free {
+  background-color: #6055a5;
+  padding: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 5rem;
+}
+form input {
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  color: #3e3c49;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+form .claim {
+  padding: 1.5rem;
+  background-color: #38cc8c;
+  width: 100%;
+  margin: 0 auto;
+  outline: none;
+  border: 1px solid #38cc8c;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form p {
+  color: #b9b6d3;
+  font-size: 0.8rem;
+  margin: 1rem;
+}
+form p .terms {
+  color: #ff7a7a;
+  font-weight: 700;
+  line-height: 2em;
 }

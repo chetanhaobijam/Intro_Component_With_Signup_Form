@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import "config";
 
-
 * {
   padding: 0;
   margin: 0;
@@ -10,4 +9,84 @@
 
 body {
   font: $font-stack;
+  background-image: url("../images/bg-intro-mobile.png");
+  background-color: $primary-red;
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  margin-top: 5rem;
+
+  h1 {
+    font-size: 1.8rem;
+    line-height: 1.3em;
+  }
+
+  p {
+    width: 90%;
+    margin: 2rem auto 4rem;
+    font-size: 1.1rem;
+  }
+}
+
+.try-free {
+  background-color: $accent-blue;
+  padding: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  width: 90%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 5rem;
+
+  input {
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    color: $neutral-dark-blue;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  .claim {
+    padding: 1.5rem;
+    background-color: $primary-green;
+    width: 100%;
+    margin: 0 auto;
+    outline: none;
+    border: 1px solid $primary-green;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  p {
+    color: $neutral-grayish-blue;
+
+    font-size: 0.8rem;
+    margin: 1rem;
+
+    .terms {
+      color: $primary-red;
+      font-weight: 700;
+      line-height: 2em;
+    }
+  }
 }
