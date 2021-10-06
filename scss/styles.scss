@@ -15,7 +15,7 @@ body {
   text-align: center;
 }
 
-header {
+.header {
   margin-top: 5rem;
 
   h1 {
@@ -25,68 +25,83 @@ header {
 
   p {
     width: 90%;
+    max-width: 510px;
     margin: 2rem auto 4rem;
     font-size: 1.1rem;
   }
 }
 
-.try-free {
-  background-color: $accent-blue;
-  padding: 1.5rem;
-  width: 90%;
+.main {
+  max-width: 510px;
   margin: 0 auto;
-  border-radius: 10px;
-  margin-bottom: 2rem;
-  font-size: 1.2rem;
-  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
-}
 
-form {
-  width: 90%;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
-  margin-bottom: 5rem;
-
-  input {
-    width: 100%;
-    padding: 1rem;
-    outline: none;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    color: $neutral-dark-blue;
-    font-size: 1.1rem;
-    font-weight: 700;
-  }
-
-  .claim {
+  .try-free {
+    background-color: $accent-blue;
     padding: 1.5rem;
-    background-color: $primary-green;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
-    outline: none;
-    border: 1px solid $primary-green;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
   }
   
-  p {
-    color: $neutral-grayish-blue;
-
-    font-size: 0.8rem;
-    margin: 1rem;
-
-    .terms {
-      color: $primary-red;
+  form {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5rem;
+  
+    input {
+      width: 100%;
+      padding: 1rem;
+      outline: none;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      color: $neutral-dark-blue;
+      font-size: 0.8rem;
       font-weight: 700;
-      line-height: 2em;
+    }
+
+    .claim {
+      padding: 1.5rem;
+      background-color: $primary-green;
+      width: 100%;
+      margin: 0 auto;
+      border: 2px solid $primary-green;
+      outline: none;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: lighten($primary-green, 15%);
+      }
+
+      &:focus {
+        box-shadow: 0 0px 2px 5px #75dbaf8e;
+      }
+    }
+
+    p {
+      color: $neutral-grayish-blue;
+      font-size: 0.7rem;
+      margin: 1rem;
+
+      .terms {
+        color: $primary-red;
+        font-weight: 700;
+        line-height: 2em;
+      }
     }
   }
 }
+
+@import "media";
