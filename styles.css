@@ -40,6 +40,7 @@ body {
   margin-bottom: 2rem;
   font-size: 1.2rem;
   box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 .main form {
   width: 90%;
@@ -90,6 +91,7 @@ body {
   color: #ff7a7a;
   font-weight: 700;
   line-height: 2em;
+  cursor: pointer;
 }
 
 @media (min-width: 1120px) {
