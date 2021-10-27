@@ -55,12 +55,20 @@ body {
   width: 100%;
   padding: 1rem;
   outline: none;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 1rem;
   border-radius: 5px;
   color: #3e3c49;
   font-size: 0.8rem;
   font-weight: 700;
+}
+.main form input:focus:valid {
+  border-color: #6055a5;
+}
+.main form input:focus:invalid {
+  border-color: #ff7a7a;
+  background: url("../images/icon-error.svg") no-repeat 95% 50%;
+  background-size: 25px;
 }
 .main form .claim {
   padding: 1.5rem;

@@ -60,12 +60,26 @@ body {
       width: 100%;
       padding: 1rem;
       outline: none;
-      border: 1px solid rgba(0, 0, 0, 0.2);
+      border: 2px solid rgba(0, 0, 0, 0.1);
       margin-bottom: 1rem;
       border-radius: 5px;
       color: $neutral-dark-blue;
       font-size: 0.8rem;
       font-weight: 700;
+      
+      &:focus {
+
+        &:valid {
+          border-color: $accent-blue;
+        }
+        &:invalid {
+          border-color: $primary-red;
+          background: url("../images/icon-error.svg") no-repeat 95% 50%;
+          background-size: 25px;
+        }
+      }
+
+      
     }
 
     .claim {
