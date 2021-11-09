@@ -56,30 +56,48 @@ body {
     box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
     margin-bottom: 5rem;
   
-    input {
-      width: 100%;
-      padding: 1rem;
-      outline: none;
-      border: 2px solid rgba(0, 0, 0, 0.1);
-      margin-bottom: 1rem;
-      border-radius: 5px;
-      color: $neutral-dark-blue;
-      font-size: 0.8rem;
-      font-weight: 700;
-      
-      &:focus {
+    .form-group {
+      position: relative;
+      padding-bottom: 2rem;
 
-        &:valid {
+      input {
+        width: 100%;
+        padding: 1rem;
+        outline: none;
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        color: $neutral-dark-blue;
+        font-size: 0.8rem;
+        font-weight: 700;
+        
+        &:focus {
           border-color: $accent-blue;
         }
-        &:invalid {
+      }
+      img {
+        display: none;
+      }
+      small {
+        display: none;
+      }
+      &.error {
+        input {
           border-color: $primary-red;
-          background: url("../images/icon-error.svg") no-repeat 95% 50%;
-          background-size: 25px;
+        }
+        img {
+          display: block;
+          position: absolute;
+          top: 0.8em;
+          right: 0.5em;
+        }
+        small {
+          display: block;
+          color: $primary-red;
+          position: absolute;
+          bottom: 0.5em;
+          left: 0;
         }
       }
-
-      
     }
 
     .claim {

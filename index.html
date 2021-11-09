@@ -25,17 +25,29 @@
     </section>
     
     <form action="#">
-      <div>
-        <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+      <div class="form-group">
+        <input type="text" name="first-name" id="first-name" placeholder="First Name">
+        <!-- Show only on error -->
+        <img src="./images/icon-error.svg" alt="Error Icon">
+        <small>Error Message</small>
       </div>
-      <div>
-        <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+      <div class="form-group">
+        <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+        <!-- Show only on error -->
+        <img src="./images/icon-error.svg" alt="Error Icon">
+        <small>Error Message</small>
       </div>
-      <div>
-        <input type="email" name="email" id="email" placeholder="Email Address" required>
+      <div class="form-group">
+        <input type="email" name="email" id="email" placeholder="Email Address">
+        <!-- Show only on error -->
+        <img src="./images/icon-error.svg" alt="Error Icon">
+        <small>Error Message</small>
       </div>
-      <div>
-        <input type="password" name="password" id="password" placeholder="Password" required>
+      <div class="form-group">
+        <input type="password" name="password" id="password" placeholder="Password">
+        <!-- Show only on error -->
+        <img src="./images/icon-error.svg" alt="Error Icon">
+        <small>Error Message</small>
       </div>
       <button type="submit" class="claim">Claim your free trial</button>
       <p>

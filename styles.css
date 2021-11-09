@@ -51,24 +51,44 @@ body {
   box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
   margin-bottom: 5rem;
 }
-.main form input {
+.main form .form-group {
+  position: relative;
+  padding-bottom: 2rem;
+}
+.main form .form-group input {
   width: 100%;
   padding: 1rem;
   outline: none;
   border: 2px solid rgba(0, 0, 0, 0.1);
-  margin-bottom: 1rem;
   border-radius: 5px;
   color: #3e3c49;
   font-size: 0.8rem;
   font-weight: 700;
 }
-.main form input:focus:valid {
+.main form .form-group input:focus {
   border-color: #6055a5;
 }
-.main form input:focus:invalid {
+.main form .form-group img {
+  display: none;
+}
+.main form .form-group small {
+  display: none;
+}
+.main form .form-group.error input {
   border-color: #ff7a7a;
-  background: url("../images/icon-error.svg") no-repeat 95% 50%;
-  background-size: 25px;
+}
+.main form .form-group.error img {
+  display: block;
+  position: absolute;
+  top: 0.8em;
+  right: 0.5em;
+}
+.main form .form-group.error small {
+  display: block;
+  color: #ff7a7a;
+  position: absolute;
+  bottom: 0.5em;
+  left: 0;
 }
 .main form .claim {
   padding: 1.5rem;
