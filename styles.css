@@ -90,6 +90,9 @@ body {
   bottom: 0.5em;
   left: 0;
 }
+.main form .form-group.success input {
+  border-color: #38cc8c;
+}
 .main form .claim {
   padding: 1.5rem;
   background-color: #38cc8c;
