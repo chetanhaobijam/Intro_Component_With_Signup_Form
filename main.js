@@ -15,24 +15,24 @@ const checkInputs = () => {
   let emailValue = email.value.trim();
   let passwordValue = password.value.trim();
   if(firstNameValue === "") {
-    showError(firstName, `First Name cannot be blank`);
+    showError(firstName, `First Name cannot be empty`);
   } else {
     removeError(firstName);
   }
   if(lastNameValue === "") {
-    showError(lastName, `Last Name cannot be blank`);
+    showError(lastName, `Last Name cannot be empty`);
   } else {
     removeError(lastName);
   }
   if(emailValue === "") {
-    showError(email, `Email cannot be blank`)
+    showError(email, `Email cannot be empty`)
   } else if(!emailValid(emailValue)) {
-    showError(email, `Invalid email`);
+    showError(email, `Looks like this is not an email`);
   } else {
     removeError(email);
   }
   if(passwordValue === "") {
-    showError(password, `Password cannot be blank`)
+    showError(password, `Password cannot be empty`)
   } else {
     removeError(password);
   }

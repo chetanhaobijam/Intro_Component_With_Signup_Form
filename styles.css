@@ -49,7 +49,7 @@ body {
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 .main form .form-group {
   position: relative;
@@ -155,7 +155,7 @@ body {
     max-width: 700px;
   }
   body .main form {
-    padding: 2rem;
+    padding: 2rem 2rem 1rem;
   }
   body footer {
     grid-column: 1/13;
