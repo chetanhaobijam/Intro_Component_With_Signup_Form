@@ -38,9 +38,15 @@ body {
   margin: 0 auto;
   border-radius: 10px;
   margin-bottom: 2rem;
-  font-size: 1.2rem;
   box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+.main .try-free h4 {
+  font-size: 1.2rem;
+}
+.main .try-free h4 span {
+  font-size: 1rem;
+  font-weight: 400;
 }
 .main form {
   width: 90%;
@@ -88,7 +94,7 @@ body {
   color: #ff7a7a;
   position: absolute;
   bottom: 0.5em;
-  left: 0;
+  right: 0;
 }
 .main form .form-group.success input {
   border-color: #38cc8c;
