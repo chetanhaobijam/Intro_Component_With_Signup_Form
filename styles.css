@@ -41,10 +41,10 @@ body {
   box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
-.main .try-free h4 {
+.main .try-free h2 {
   font-size: 1.2rem;
 }
-.main .try-free h4 span {
+.main .try-free h2 span {
   font-size: 1rem;
   font-weight: 400;
 }
